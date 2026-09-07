@@ -1,1 +1,0 @@
-# deepak-karani.github.io
