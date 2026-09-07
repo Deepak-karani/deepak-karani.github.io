@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Deepak Karani builds AI systems, backend infrastructure, mobile products, and hardware at UC Santa Cruz.">
+  <meta name="theme-color" content="#08110f">
+  <title>Deepak Karani | Product Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to work</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Deepak Karani home">
+      <span class="wordmark-dot"></span>
+      DK<span class="muted">/26</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-cta" href="mailto:karanideepak691@gmail.com">Get in touch <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="status-pulse"></span> UCSC engineering student · Graduating June 2028</div>
+      <h1 id="hero-title">I build systems that<br><span class="hero-accent">make AI useful.</span></h1>
+      <div class="hero-lower">
+        <p class="hero-copy">I’m Deepak, a product-minded engineer working across backend infrastructure, agent systems, mobile apps, and hardware. I like taking ambitious ideas all the way to a working product.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore my work <span>↓</span></a>
+          <a class="button secondary" href="https://mypibu.app/" target="_blank" rel="noreferrer">Try Pibu <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="signal-board" aria-label="Engineering focus summary">
+        <div class="signal-topbar">
+          <span>BUILD_LOG</span>
+          <span class="signal-running"><i></i> CURRENTLY SHIPPING</span>
+        </div>
+        <div class="signal-grid">
+          <div class="signal-cell signal-main">
+            <div class="signal-label">LATEST PRODUCT</div>
+            <div class="signal-product"><img src="assets/pibu-logo.png" alt=""><strong>Pibu</strong></div>
+            <p>AI-powered skincare analysis, built and shipped to iOS.</p>
+            <div class="pipeline" aria-hidden="true">
+              <span>mobile</span><b>→</b><span>edge</span><b>→</b><span>vision</span><b>→</b><span>insight</span>
+            </div>
+          </div>
+          <div class="signal-cell metric">
+            <span class="metric-number">07</span>
+            <span class="metric-label">software projects</span>
+          </div>
+          <div class="signal-cell metric">
+            <span class="metric-number">03</span>
+            <span class="metric-label">hackathon awards</span>
+          </div>
+          <div class="signal-cell metric">
+            <span class="metric-number">07</span>
+            <span class="metric-label">parallel agents in Cortex</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">01 / SOFTWARE</span>
+          <h2 id="work-title">Things I’ve built</h2>
+        </div>
+        <p>Products, infrastructure, and experiments. Every project here reached a working demo or real users.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" type="button">All <span>7</span></button>
+        <button class="filter" data-filter="ai" type="button">AI systems</button>
+        <button class="filter" data-filter="backend" type="button">Backend</button>
+        <button class="filter" data-filter="product" type="button">Products</button>
+        <button class="filter" data-filter="mobile" type="button">Mobile</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured" id="pibu" data-tags="ai backend product mobile">
+          <div class="project-visual real-visual pibu-real">
+            <img class="project-shot pibu-shot" src="assets/pibu-hero.webp" alt="Pibu brand mark and the words personalized intelligent beauty for you" width="1200" height="630">
+            <img class="pibu-logo-badge" src="assets/pibu-logo.png" alt="Pibu seal mascot app logo" width="256" height="256">
+            <span class="visual-caption">PRODUCTION · iOS</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>01</span><span>May 2026 - now</span></div>
+            <h3>Pibu</h3>
+            <p class="project-lede">An AI skincare companion that turns a guided photo check-in into clear, trackable insights.</p>
+            <p>Built and shipped the product using React Native, Expo, Supabase, Deno Edge Functions, and Vertex AI. I led a four-person team while owning product engineering, system integration, data flow, debugging, privacy safeguards, QA, and App Store delivery.</p>
+            <div class="project-stack"><span>React Native</span><span>PostgreSQL</span><span>Vertex AI</span><span>Edge Functions</span></div>
+            <div class="project-links">
+              <a href="https://mypibu.app/" target="_blank" rel="noreferrer">Visit product <span>↗</span></a>
+              <a href="https://apps.apple.com/us/app/pibu/id6772330792" target="_blank" rel="noreferrer">App Store <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" id="userswarm" data-tags="ai backend">
+          <div class="project-visual real-visual">
+            <img class="project-shot" src="assets/userswarm.webp" alt="UserSwarm session replay interface showing an AI persona testing a website" width="805" height="573" loading="lazy" decoding="async">
+            <span class="visual-caption">AGENT DAG · EVALUATION</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>02</span><span>Jun 2026</span></div>
+            <h3>UserSwarm</h3>
+            <p class="project-lede">Autonomous AI personas that test live web apps and turn browser sessions into evidence-backed UX reports.</p>
+            <p>I built the backend agent infrastructure: a FastAPI DAG, isolated Playwright sessions, structured report generation, code and LLM evaluations, human-review calibration, and Arize/OpenTelemetry tracing.</p>
+            <div class="project-stack"><span>FastAPI</span><span>Playwright</span><span>Claude</span><span>OpenTelemetry</span></div>
+            <div class="project-links"><a href="https://devpost.com/software/userswarm" target="_blank" rel="noreferrer">Project archive <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="kasha" data-tags="ai backend product">
+          <div class="award-ribbon">VISA TRACK WINNER</div>
+          <div class="project-visual real-visual">
+            <img class="project-shot" src="assets/kasha.webp" alt="Kasha homepage introducing Penny, the campus finance companion" width="806" height="528" loading="lazy" decoding="async">
+            <span class="visual-caption">REAL TIME · VISA APIs</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>03</span><span>Oct 2025</span></div>
+            <h3>Kasha</h3>
+            <p class="project-lede">A social budgeting system for shared spending, live balances, and contextual financial coaching.</p>
+            <p>As backend engineer, I designed the APIs and shared-transaction data flows using FastAPI, Node.js, PostgreSQL, Socket.io, and five Visa APIs. The team won the Visa track at Cal Hacks.</p>
+            <div class="project-stack"><span>FastAPI</span><span>Node.js</span><span>PostgreSQL</span><span>Socket.io</span></div>
+            <div class="project-links"><a href="https://devpost.com/software/kasha" target="_blank" rel="noreferrer">Project archive <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="slugroute" data-tags="ai backend product">
+          <div class="award-ribbon">2X TRACK WINNER</div>
+          <div class="project-visual real-visual">
+            <img class="project-shot" src="assets/slugroute.webp" alt="SlugRoute map comparing three weather-aware walking routes around UC Santa Cruz" width="806" height="398" loading="lazy" decoding="async">
+            <span class="visual-caption">LIVE WEATHER · ROUTING</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>04</span><span>Jan 2026</span></div>
+            <h3>SlugRoute</h3>
+            <p class="project-lede">A route optimizer that responds to live weather instead of treating the map as static.</p>
+            <p>I integrated WindBorne weather data, Mapbox routing, geospatial scoring, authentication, and model fallbacks. The project won Best Use of WindBorne API and Best Use of ElevenLabs.</p>
+            <div class="project-stack"><span>Next.js</span><span>Mapbox</span><span>Gemini</span><span>Auth0</span></div>
+            <div class="project-links">
+              <a href="https://github.com/karanideepak691/slugroute" target="_blank" rel="noreferrer">Source <span>↗</span></a>
+              <a href="https://devpost.com/software/slugroute" target="_blank" rel="noreferrer">Project archive <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" id="cortex" data-tags="ai backend">
+          <div class="project-visual real-visual">
+            <img class="project-shot" src="assets/cortex.webp" alt="Cortex Arena dark dashboard showing local agent status and cognitive signals" width="806" height="458" loading="lazy" decoding="async">
+            <span class="visual-caption">7 AGENTS · LOCAL FIRST</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>05</span><span>May 2026</span></div>
+            <h3>Cortex</h3>
+            <p class="project-lede">A local-first cognitive workspace that coordinates biometrics, gaze, and screen context without sending frames to the cloud.</p>
+            <p>I implemented Express and Socket.io orchestration for seven parallel local agents, plus privacy-safe frame handling, multimodal ingestion, and a deterministic fallback for reliable demos.</p>
+            <div class="project-stack"><span>Express</span><span>Socket.io</span><span>Nemotron</span><span>DGX Spark</span></div>
+            <div class="project-links"><a href="https://devpost.com/software/cortex-t02lud" target="_blank" rel="noreferrer">Project archive <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="roost" data-tags="ai product mobile">
+          <div class="project-visual real-visual roost-real">
+            <img class="project-shot shot-contain" src="assets/roost.webp" alt="Roost Android home screen showing a savings dragon and weekly budget" width="264" height="573" loading="lazy" decoding="async">
+            <span class="visual-caption">ON DEVICE · ANDROID</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>06</span><span>2026</span></div>
+            <h3>Roost</h3>
+            <p class="project-lede">An offline-first Android app that turns grocery receipts into a usable household inventory.</p>
+            <p>I worked across the data layer, including the Room and SQLite schema, DAOs, and repository, then helped shape the brand, presentation site, and outreach.</p>
+            <div class="project-stack"><span>Kotlin</span><span>Jetpack Compose</span><span>Room</span><span>ML Kit</span></div>
+            <div class="project-links"><a href="https://devpost.com/software/roost-xfma0q" target="_blank" rel="noreferrer">Project archive <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="focus-flow" data-tags="product mobile">
+          <div class="project-visual visual-focus" aria-hidden="true">
+            <div class="focus-grid">
+              <span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span>
+              <span style="--i:4"></span><span style="--i:5"></span><span style="--i:6"></span><span style="--i:7"></span>
+              <span style="--i:8"></span><span style="--i:9"></span><span style="--i:10"></span><span style="--i:11"></span>
+            </div>
+            <span class="visual-caption">SOCIAL FOCUS · iOS</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>07</span><span>Oct 2024</span></div>
+            <h3>Focus Flow</h3>
+            <p class="project-lede">A social task app that makes progress visible through shared goals and evolving image tiles.</p>
+            <p>Built with a team during Cal Hacks 11 using SwiftUI, Xcode, and Figma. We worked in short sprints to turn the concept into a functioning iOS prototype.</p>
+            <div class="project-stack"><span>SwiftUI</span><span>Xcode</span><span>Figma</span><span>Agile</span></div>
+            <div class="project-links"><a href="https://devpost.com/software/focus-flow" target="_blank" rel="noreferrer">Project archive <span>↗</span></a></div>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>No projects match that filter yet.</p>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-copy">
+        <span class="section-index">02 / ABOUT</span>
+        <h2 id="about-title">Curious across the stack.<br>Serious about shipping.</h2>
+        <p>I’m studying Electrical Engineering at UC Santa Cruz and expect to graduate in June 2028. My best work sits where reliable infrastructure meets a clear user problem.</p>
+        <p>I am looking for software engineering internships where I can contribute to backend systems, applied AI, developer tools, or product engineering.</p>
+      </div>
+      <div class="toolbox">
+        <span class="toolbox-label">WORKING SET</span>
+        <div class="tool-row"><b>Languages</b><span>Python · TypeScript · JavaScript · C · SQL · Swift · Kotlin</span></div>
+        <div class="tool-row"><b>Backend</b><span>FastAPI · Node.js · Express · PostgreSQL · Supabase · WebSockets</span></div>
+        <div class="tool-row"><b>AI systems</b><span>Agent orchestration · Evals · Playwright · OpenTelemetry · Vertex AI</span></div>
+        <div class="tool-row"><b>Product</b><span>React Native · Expo · SwiftUI · Xcode · App Store delivery</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-title">
+      <span class="contact-orbit" aria-hidden="true"></span>
+      <p>Have a hard problem and room for an intern?</p>
+      <h2 id="contact-title">Let’s build something<br><span>that works.</span></h2>
+      <div class="contact-actions">
+        <a class="button light" href="mailto:karanideepak691@gmail.com">Email me <span>↗</span></a>
+        <a class="button outline-light" href="https://www.linkedin.com/in/deepak-karani-14a85726b" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Deepak Karani · 2026</span>
+    <span>Built with care in Santa Cruz, CA</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
