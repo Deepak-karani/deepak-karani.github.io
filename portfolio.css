@@ -25,3 +25,12 @@
 .project-cortex .project-art>img,.project-userswarm .project-art>img{object-fit:contain;padding:14px}
 .project:last-child:nth-child(even){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
 @media(max-width:580px){.project:last-child:nth-child(even){display:block}.project-lede,.featured .project-lede{font-size:16px}}
+
+/* Transparent display outside the original circular SlugRoute logo. */
+.slugroute-cutout img{clip-path:ellipse(37.15% 48.95% at 49.72% 49.08%);background:transparent!important;padding:0!important;display:block}
+.project-slugroute .project-art{display:flex;align-items:center;justify-content:center}
+.project-slugroute .slugroute-cutout{width:min(calc(100% - 40px),350px);aspect-ratio:1448/1086}
+.project-slugroute .slugroute-cutout img{width:100%;height:auto;max-width:100%;object-fit:fill}
+.desk-map .slugroute-cutout{width:100%;aspect-ratio:2.02;display:flex;align-items:center;justify-content:center}
+.desk-map .slugroute-cutout img{height:100%;width:auto;max-width:100%;aspect-ratio:1448/1086;object-fit:fill}
+@media(max-width:580px){.project-slugroute .slugroute-cutout{width:min(calc(100% - 36px),300px)}}
